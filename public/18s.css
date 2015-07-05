@@ -1,0 +1,277 @@
+ul {
+    list-style-type: none;
+    margin: 0px auto;
+}
+ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+    width:66px;
+    height: 80px;
+    display: inline-block;
+}
+.et_custom_color{
+  background-color: #0091ea !important;
+}
+.et_movie_comment {
+    font-family:"Verdana";
+    font-size: 18px;
+    color:white;
+    margin-top: 39px;
+    opacity: 0.8;
+    text-decoration: overline;
+}
+#et_icons_control {
+    width: 100%;
+    position: relative;
+    left: -19px;
+}
+#et_logo_area {
+    padding-top: 14px;
+    text-align: left;
+}
+#et_bar {
+    fill:#ffffff;
+    margin-left: 100px;
+}
+.st2 {
+    stroke-dasharray:800;
+    stroke-dashoffset:700;
+    -webkit-animation:dash 2s linear forwards;
+    -moz-animation:dash 2s linear forwards;
+    animation:dash 2s linear forwards;
+    opacity:0.0;
+}
+@-webkit-keyframes dash {
+    from {
+        stroke-dashoffset:800;
+    }
+    to {
+        stroke-dashoffset:1;
+        opacity:1;
+    }
+}
+@-moz-keyframes dash {
+    from {
+        stroke-dashoffset:800;
+    }
+    to {
+        stroke-dashoffset:1;
+        opacity:1;
+    }
+}
+@keyframes dash {
+    from {
+        stroke-dashoffset:800;
+    }
+    to {
+        stroke-dashoffset:1;
+        opacity:1;
+    }
+}
+.st3 {
+    stroke-dasharray:800;
+    stroke-dashoffset:700;
+    -webkit-animation:dash 5s linear forwards;
+    -moz-animation:dash 5s linear forwards;
+    animation:dash 5s linear forwards;
+    -webkit-animation-delay:1s;
+    -moz-animation-delay:1s;
+    animation-delay:1s;
+}
+#et_main {
+    color:white;
+}
+#et_main_content {
+    margin-top:50px;
+    text-align: center;
+    color:white;
+}
+#et_page_content {
+    margin-top:50px;
+    text-align: center;
+    color:white;
+}
+#et_sbs_logo {
+    margin-right: 30px;
+    margin-left: 30px;
+    max-height: 50px;
+}
+.etrow1 {
+    background-color: #0091ea !important;
+}
+.etrow2 {
+    background-color: white !important;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.etrow3 {
+    background-color: #0091ea !important;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+.et_info_btn {
+    background-color: none;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    margin: 0px auto;
+    vertical-align: center;
+    font-size: 22px;
+}
+.et_menu_cont_title_b {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+}
+#et_sm_img {
+    max-height:30px;
+}
+a {
+    color: white;
+    text-shadow: none !important;
+}
+/* GLOBAL STYLES
+-------------------------------------------------- */
+
+/* Padding below the footer and lighter body text */
+ body {
+    padding-bottom: 40px;
+    color: #5a5a5a;
+}
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+ #et_nav {
+    border-radius: 0px !important;
+    background-color: none !important;
+    font-weight: none !important;
+    height:20px !important;
+}
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+ .navbar-wrapper {
+    position: absolute;
+    margin-top:10px !important;
+    border-radius: 0px !important;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+/* Flip around the padding for proper display in narrow viewports */
+ .navbar-wrapper > .container {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-wrapper .navbar {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.navbar-wrapper .navbar .container {
+    width: auto;
+}
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+ @media (min-width: 240px) {
+    .et_title {
+        margin-top: 120px;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .et_title_page {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .et_menu_cont_title_w {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        color:white;
+        text-decoration: underline;
+    }
+    .et_howto {
+        color:white;
+        text-align: left;
+        font-size: 65px;
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 40px;
+        text-shadow: 2px 2px #18ffff;
+    }
+    #et_explain_ment {
+        margin:20px 10px 5px 10px;
+        padding:10px 20px 10px 20px;
+        color:white;
+        font-size: 17px;
+        text-align: left;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+}
+@media (min-width: 768px) {
+    /* Navbar positioning foo */
+    .navbar-wrapper {
+        margin-top: 20px;
+    }
+    .navbar-wrapper .container {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .navbar-wrapper .navbar {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    /* The navbar becomes detached from the top, so we round the corners */
+    .navbar-wrapper .navbar {
+        border-radius: 4px;
+    }
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+        margin-bottom: 20px;
+        font-size: 21px;
+        line-height: 1.4;
+    }
+    .et_title {
+        margin-top: 120px;
+        font-weight: bold;
+        font-size: 120px;
+    }
+    .et_title_page {
+        margin-top: 20px;
+        font-weight: bold;
+        font-size: 120px;
+    }
+    .et_menu_cont_title_w {
+        margin-top: 50px;
+        margin-bottom: 0px;
+        font-size: 70px;
+        font-weight: bold;
+        text-align: center;
+        color:white;
+        text-decoration: underline;
+    }
+    .et_howto {
+        color:white;
+        text-align: left;
+        font-size: 90px;
+        font-weight: bold;
+        font-style: italic;
+        padding-left: 40px;
+        text-shadow: 2px 2px #18ffff;
+    }
+    #et_explain_ment {
+        margin:0px 10px 5px 10px;
+        padding:10px 20px 10px 20px;
+        color:white;
+        font-size: 17px;
+        text-align: left;
+        border-radius: 10px;
+        border: 2px solid white;
+    }
+}

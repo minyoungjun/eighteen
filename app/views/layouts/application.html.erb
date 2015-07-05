@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>18 Seconds</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <%= javascript_include_tag 'application'%>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <link href="/18s.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Css -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/lightbox.min.css" />
+    <link rel="stylesheet" href="/css/elegant-icons.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+    <link rel="stylesheet" href="/rs-plugin/css/settings.css" />
+    <link rel="stylesheet" href="/css/rev-slider.css" />
+    <link rel="stylesheet" href="/css/owl.carousel.css">
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/spacings.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <link rel="stylesheet" href="/css/animate.css" />
+
+    <!-- Favicons 
+    <link rel="shortcut icon" href="upload/favicon.ico">
+    <link rel="apple-touch-icon" href="upload/apple-touch-icon.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="upload/apple-touch-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="upload/apple-touch-icon-114x114.png">-->
+  <%= stylesheet_link_tag    'application', media: 'all'%>
+  <%= csrf_meta_tags %>
+
+
+
+</head>
+<body>
+
+    <div class="row etrow3">
+        <div id="et_logo_area">
+            <img src="http://imagizer.imageshack.us/v2/280x200q90/911/BIaHOP.png" id="et_sbs_logo">
+        </div>
+        <div class="col-sm-12" id="et_main">
+            <div id="et_page_content">
+                <object>
+                    <embed id="ett" />
+                </object>
+                <script>
+                    var description = [
+                        "/18s_l_8.svg",
+                        "/18s_l_6.svg",
+                        "/18s_l_9.svg",
+                        "/18s_l_10.svg",
+                        "/18s_l_11.svg",
+                        "/18s_l_12.svg",
+                        "/18s_l_13.svg",
+                        "/18s_l_14.svg",
+                        "/18s_l_4.svg"];
+                    var size = description.length
+                    var x = Math.floor(size * Math.random())
+                     document.getElementById('ett').src = description[x];
+                </script>
+                <br>
+                <br>
+            </div>
+        </div>
+        <div id="et_icons_control">
+            <ul>
+                <li>
+                    <object>
+                        <embed src="/18s_home.svg">
+                    </object>
+                </li>
+                <li>
+                    <object>
+                        <embed src="/18s_intro_f.svg">
+                    </object>
+                </li>
+                <li>
+                    <object>
+                        <embed src="/18s_part.svg">
+                    </object>
+                </li>
+                <li>
+                    <object>
+                        <embed src="/18s_movie.svg">
+                    </object>
+                </li>
+                <li>
+                    <object>
+                        <embed src="/18s_mc_ff.svg">
+                    </object>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+
+
+<%= yield %>
+
+    <!-- FOOTER -->
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a>
+        </p>
+        <p>
+            <img src="http://www.usdirect.com/images/new.usdirect/logo/logo-sbs.png">
+        </p>
+      </footer>
+
+
+
+      <script src="https://static.tagboard.com/public/js/embedAdvanced.js"></script>
+</body>
+</html>
