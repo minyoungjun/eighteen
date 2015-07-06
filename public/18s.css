@@ -3,12 +3,20 @@ ul {
     margin: 0px auto;
 }
 ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-    width:66px;
-    height: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width:49.5px;
+    height: 60px;
     display: inline-block;
 }
+.et_organizer{
+    position:relative;
+    top:-200px;
+}
+/*.et_new_and_featured{
+    position:relative;
+    top:-200px !important;
+}*/
 .et_custom_color{
   background-color: #0091ea !important;
 }
@@ -20,11 +28,7 @@ ul li {
     opacity: 0.8;
     text-decoration: overline;
 }
-#et_icons_control {
-    width: 100%;
-    position: relative;
-    left: -19px;
-}
+
 #et_logo_area {
     padding-top: 14px;
     text-align: left;
@@ -79,6 +83,8 @@ ul li {
     animation-delay:1s;
 }
 #et_main {
+    position:relative;
+    top:-110px;
     color:white;
 }
 #et_main_content {
@@ -97,7 +103,8 @@ ul li {
     max-height: 50px;
 }
 .etrow1 {
-    background-color: #0091ea !important;
+    background-color: white !important;
+
 }
 .etrow2 {
     background-color: white !important;
@@ -105,12 +112,7 @@ ul li {
     margin-top: 30px;
     margin-bottom: 30px;
 }
-.etrow3 {
-    background-color: #0091ea !important;
-    text-align: center;
-    margin-top: 0px;
-    padding-bottom: 0px;
-}
+
 .et_info_btn {
     background-color: none;
     color: white;
@@ -131,6 +133,12 @@ ul li {
 #et_sm_img {
     max-height:30px;
 }
+.etrow3 {
+    background-color: #0091ea !important;
+    text-align: center;
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
 a {
     color: white;
     text-shadow: none !important;
@@ -141,7 +149,7 @@ a {
 /* Padding below the footer and lighter body text */
  body {
     padding-bottom: 40px;
-    color: #5a5a5a;
+    background-color: white;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -187,12 +195,12 @@ a {
         font-size: 60px;
     }
     .et_menu_cont_title_w {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 0px;
         font-size: 40px;
         font-weight: bold;
         text-align: center;
-        color:white;
+        color:black;
         text-decoration: underline;
     }
     .et_howto {
@@ -213,9 +221,24 @@ a {
         border-radius: 10px;
         border: 2px solid white;
     }
+    .et_tagboard_format{
+        margin-top: 10px;
+    }
+    #et_icons_control {
+    width: 100%;
+    position: relative;
+    top:-135px;
+    margin-bottom: 20px;
+}
+    .et_mobile_how{
+        padding-top: 50px;
+    }
 }
 @media (min-width: 768px) {
     /* Navbar positioning foo */
+    .et_tagboard_format{
+        margin-top: 3px;
+    }
     .navbar-wrapper {
         margin-top: 20px;
     }
@@ -248,13 +271,14 @@ a {
         font-size: 120px;
     }
     .et_menu_cont_title_w {
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 0px;
-        font-size: 70px;
+        font-size: 40px;
         font-weight: bold;
         text-align: center;
-        color:white;
+        color:black;
         text-decoration: underline;
+        font-family: "Helvetica";
     }
     .et_howto {
         color:white;
@@ -274,4 +298,9 @@ a {
         border-radius: 10px;
         border: 2px solid white;
     }
+    #et_icons_control {
+    width: 100%;
+    position: relative;
+    top:-160px;
+}
 }
