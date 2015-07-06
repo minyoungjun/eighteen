@@ -31,6 +31,7 @@
 }
 </style>
 
+<a xlink:href="/main/people" target="_top">
 <g transform="translate(30,30)"><circle class="fill" r="0.1"/></g>
 <g>
 	<circle class="st0" cx="30" cy="30" r="26"/>
