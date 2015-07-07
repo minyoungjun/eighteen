@@ -1,13 +1,31 @@
+.et_bg {
+ background: rgba(67,112,183,1);/* Old Browsers */
+background: -moz-radial-gradient(center, ellipse cover, rgba(67,112,183,1) 0%, rgba(26,23,76,1) 75%, rgba(26,23,76,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(67,112,183,1)), color-stop(75%, rgba(26,23,76,1)), color-stop(100%, rgba(26,23,76,1)));/* Chrome, Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover, rgba(67,112,183,1) 0%, rgba(26,23,76,1) 75%, rgba(26,23,76,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover, rgba(67,112,183,1) 0%, rgba(26,23,76,1) 75%, rgba(26,23,76,1) 100%); /* Opera 11.10+ */
+background: -ms-radial-gradient(center, ellipse cover, rgba(67,112,183,1) 0%, rgba(26,23,76,1) 75%, rgba(26,23,76,1) 100%); /* IE 10+ */
+background: radial-gradient(ellipse at center, rgba(67,112,183,1) 0%, rgba(26,23,76,1) 75%, rgba(26,23,76,1) 100%);/* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4370b7', endColorstr='#1a174c', GradientType=1 );/* IE6-9 fallback on horizontal gradient */
+}
+
 footer{
     margin-top: 100px;
 }
 .et_menu_bar{
     color:black;
-    background-color: white;
     padding: 5px 0px 5px 0px;
     text-align: center;
     border-radius: 3px;
-    margin-bottom: 10px;
+    
+}
+.et_menu_icons{
+    height: 55px;
+
+}
+.et_howto_images{
+    height: 55px;
+    margin-top: 20px; 
 }
 .et_sns_icons{
     margin-top: 50px;
@@ -54,12 +72,16 @@ ul li {
 .et_para_sub{
     font-family: "Nanum Gothic";
     font-size: 18px;
-    color: rgb(247, 17, 122);
+    color: grey;
 }
 .et_para_comment{
     font-family: "Nanum Gothic";
     padding-top: 25px;
     font-size: 18px;
+}
+.et_para_content{
+    font-family: "Nanum Gothic";
+    padding-top: 25px;
 }
 #et_logo_area {
     padding-top: 14px;

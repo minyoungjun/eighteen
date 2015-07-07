@@ -46,9 +46,9 @@
 
 
 
-    <div class="row etrow3">
+    <div class="row etrow3 et_bg">
         <div id="et_logo_area">
-            <img src="http://imagizer.imageshack.us/v2/280x200q90/911/BIaHOP.png" id="et_sbs_logo">
+            
         </div>
         <div class="col-sm-12" id="et_main">
 
@@ -57,19 +57,39 @@
         </div>
         <div class="row et_menu_control">
             <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1">
-            <div class="et_menu_bar"><%= link_to "Home", root_path %></div>
+            <div class="et_menu_bar">
+                <%= link_to root_path do %>
+                <%= image_tag '18s_home.svg', :class => "et_menu_icons" %>
+                <% end %>
+            </div>
             </div>
             <div class="col-xs-6 col-xs-offset-3 col-md-2 et_col">
-            <div class="et_menu_bar"><%= link_to "18초 소개", :controller => :main, :action => :intro %></div>
+            <div class="et_menu_bar">
+                <%= link_to :controller => :main, :action => :intro do %>
+                <%= image_tag '18s_intro.svg', :class => "et_menu_icons" %>
+                <% end %>
+            </div>
             </div>
             <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
-            <div class="et_menu_bar"><%= link_to "참여방법", :controller => :main, :action => :how %></div>
+            <div class="et_menu_bar">
+                <%= link_to :controller => :main, :action => :how do %>
+                <%= image_tag '18s_participate.svg', :class => "et_menu_icons" %>
+                <% end %>
+            </div>
             </div>
             <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
-            <div class="et_menu_bar"><%= link_to "참여 영상보기", :controller => :main, :action => :movies %></div>
+            <div class="et_menu_bar">
+                <%= link_to :controller => :main, :action => :movies do %>
+                <%= image_tag '18s_movies.svg', :class => "et_menu_icons" %>
+                <% end %>
+            </div>
             </div>
             <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
-            <div class="et_menu_bar"><%= link_to "제작진/MC", :controller => :main, :action => :how %></div>
+            <div class="et_menu_bar">
+                <%= link_to :controller => :main, :action => :people do %>
+                <%= image_tag '18s_mcs.svg', :class => "et_menu_icons" %>
+                <% end %>
+            </div>
             </div>
         </div>
     </div>
