@@ -10,10 +10,13 @@
         <%= javascript_include_tag 'application'%>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <link href="/18s.css" rel="stylesheet">
+        
 
         <!-- Google Fonts -->
     <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' type='text/css'>
+
 
     <!-- Css -->
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
@@ -48,70 +51,62 @@
             <img src="http://imagizer.imageshack.us/v2/280x200q90/911/BIaHOP.png" id="et_sbs_logo">
         </div>
         <div class="col-sm-12" id="et_main">
-            <div id="et_page_content">
-                <object>
-                    <embed id="ett" />
-                </object>
-                <script>
-                    var description = [
-                        "/18s_l_8.svg",
-                        "/18s_l_6.svg",
 
-                        "/18s_l_10.svg",
-                        "/18s_l_11.svg",
-                        "/18s_l_12.svg",
-                        "/18s_l_13.svg",
-                        "/18s_l_14.svg",
-                        "/18s_l_4.svg"];
-                    var size = description.length
-                    var x = Math.floor(size * Math.random())
-                     document.getElementById('ett').src = description[x];
-                </script>
+                #18seconds
                 
-            </div>
         </div>
-        <div id="et_icons_control">
-            <ul>
-                <li>
-                    <object>
-                        <embed src="/18s_home.svg">
-                    </object>
-                </li>
-                <li>
-                    <object>
-                        <embed src="/18s_intro_f.svg">
-                    </object>
-                </li>
-                <li>
-                    <object>
-                        <embed src="/18s_part.svg">
-                    </object>
-                </li>
-                <li>
-                    <object>
-                        <embed src="/18s_movie.svg">
-                    </object>
-                </li>
-                <li>
-                    <object>
-                        <embed src="/18s_mc_ff.svg">
-                    </object>
-                </li>
-            </ul>
-            <br><br>
+        <div class="row et_menu_control">
+            <div class="col-xs-6 col-xs-offset-3 col-md-2 col-md-offset-1">
+            <div class="et_menu_bar"><%= link_to "Home", root_path %></div>
+            </div>
+            <div class="col-xs-6 col-xs-offset-3 col-md-2 et_col">
+            <div class="et_menu_bar"><%= link_to "18초 소개", :controller => :main, :action => :intro %></div>
+            </div>
+            <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
+            <div class="et_menu_bar"><%= link_to "참여방법", :controller => :main, :action => :how %></div>
+            </div>
+            <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
+            <div class="et_menu_bar"><%= link_to "참여 영상보기", :controller => :main, :action => :movies %></div>
+            </div>
+            <div class="col-xs-6 col-md-2 col-xs-offset-3 et_col">
+            <div class="et_menu_bar"><%= link_to "제작진/MC", :controller => :main, :action => :how %></div>
+            </div>
         </div>
     </div>
     
 
-<div class="et_organizer">
+
 <%= yield %>
-</div>
+
     <!-- FOOTER -->
     <footer>
-        <p class="pull-right"><a href="#"></a>
+        <p class="text-center">
+            
+                <a href="#">
+                  <i class="social_facebook_circle et_sns_icons"></i>
+                </a>
+                <a href="#">
+                  <i class="social_twitter_circle et_sns_icons"></i>
+                </a>
+                <a href="#">
+                  <i class="social_instagram_circle et_sns_icons"></i>
+                </a>
+                <a href="#">
+                  <i class="social_youtube_circle et_sns_icons"></i>
+                </a>
+                <a href="#">
+                  <i class="social_googleplus_circle et_sns_icons"></i>
+                </a>
+                
         </p>
         <p>
             <img src="http://www.usdirect.com/images/new.usdirect/logo/logo-sbs.png">
+            
+
+                 
+                          
+            
+
         </p>
       </footer>
 

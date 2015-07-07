@@ -1,3 +1,32 @@
+footer{
+    margin-top: 100px;
+}
+.et_menu_bar{
+    color:black;
+    background-color: white;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+.et_sns_icons{
+    margin-top: 50px;
+    font-size: 44px;
+    color:black;
+}
+.et_howto_1{
+    text-align: left;
+    margin-top: 50px;
+    font-size:20px;
+    padding-left: 40px;
+    color: grey !important;
+    font-family: "Nanum Gothic" san-serif;
+
+}
+.et_menu_control{
+    margin: 20px 20px 40px 20px;
+}
+
 ul {
     list-style-type: none;
     margin: 0px auto;
@@ -11,24 +40,27 @@ ul li {
 }
 .et_organizer{
     position:relative;
-    top:-200px;
+    top:0px;
 }
 /*.et_new_and_featured{
     position:relative;
     top:-200px !important;
 }*/
-.et_custom_color{
-  background-color: #0091ea !important;
+.et_para_title{
+    font-family: "Nanum Gothic";
+    font-size: 25px;
+    color:black;
 }
-.et_movie_comment {
-    font-family:"Verdana";
+.et_para_sub{
+    font-family: "Nanum Gothic";
     font-size: 18px;
-    color:white;
-    margin-top: 39px;
-    opacity: 0.8;
-    text-decoration: overline;
+    color: rgb(247, 17, 122);
 }
-
+.et_para_comment{
+    font-family: "Nanum Gothic";
+    padding-top: 25px;
+    font-size: 18px;
+}
 #et_logo_area {
     padding-top: 14px;
     text-align: left;
@@ -82,20 +114,12 @@ ul li {
     -moz-animation-delay:1s;
     animation-delay:1s;
 }
-#et_main {
-    position:relative;
-    top:-110px;
-    color:white;
-}
+
 #et_main_content {
     margin-top:50px;
     text-align: center;
     color:white;
-}
-#et_page_content {
-    margin-top:50px;
-    text-align: center;
-    color:white;
+ 
 }
 #et_sbs_logo {
     margin-right: 30px;
@@ -134,10 +158,9 @@ ul li {
     max-height:30px;
 }
 .etrow3 {
-    background-color: #0091ea !important;
+    background-color: black !important;
     text-align: center;
-    margin-top: 0px;
-    padding-bottom: 0px;
+    font-family: "Nanum Gothic", san-serif !important;
 }
 a {
     color: white;
@@ -150,6 +173,7 @@ a {
  body {
     padding-bottom: 40px;
     background-color: white;
+    font-family: "Nanum Gothic",san-serif !important;
 }
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -183,7 +207,7 @@ a {
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
- @media (min-width: 240px) {
+ @media (min-width: 320px) {
     .et_title {
         margin-top: 120px;
         font-weight: bold;
@@ -233,9 +257,42 @@ a {
     .et_mobile_how{
         padding-top: 50px;
     }
+    #et_main {
+    position:relative;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 40px;
+    font-family: "Verdana";
+    text-align: center;
+
+}
+    
+}
+@media (min-width: 992px){
+    .et_col{
+    margin-left: 0px !important;
+}
+    .et_howto_1{
+    text-align: left;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    padding-left: 40px;
+    color: grey !important;
+    font-size:30px;
+
+}
 }
 @media (min-width: 768px) {
     /* Navbar positioning foo */
+    #et_main {
+    position:relative;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 100px;
+    font-family: "Verdana";
+    text-align: center;
+
+}
     .et_tagboard_format{
         margin-top: 3px;
     }
@@ -274,11 +331,11 @@ a {
         margin-top: 30px;
         margin-bottom: 0px;
         font-size: 40px;
-        font-weight: bold;
+
         text-align: center;
         color:black;
         text-decoration: underline;
-        font-family: "Helvetica";
+        font-family: "Nanum Gothic";
     }
     .et_howto {
         color:white;
