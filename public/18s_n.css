@@ -32,14 +32,25 @@ ul#tab {
       font-weight: 400;
       margin-bottom: 30px;
       padding-bottom: 5px;
-      border-bottom: solid 5px #32c896; }
+      border-bottom: solid 5px #6498BD; }
+
+.step{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-size: 45px;
+  /*float: left;
+  position: relative;
+  vertical-align: center;*/
+
+}
 
 .icon-align{
-  float:right;
-  padding-right: 60px;
-  padding-bottom: 60px;
+  display: inline;
+  text-align:left;
+  padding-left: 60px;
+  padding-bottom: 40px;
   font-size: 22px;
 }
+
 a.icon-color{
   color: black;
 }
@@ -48,18 +59,46 @@ a:hover{
   opacity: 0.3;
   text-decoration: none;
 }
+.up-right{
+  padding-right: 60px;
+  display:inline-block;
+  float: right;
+}
 
 @media (min-width: 360px){
   iframe {
     width: 200px;
     height: 150px;
   }
+  .sbs-copyright{
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 60px;
+  }
+  .how-font{
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 23px;
+}
+  
+  .step-contents{
+    padding-left: 5px;
+  }
 }
 @media (min-width: 900px){
+  
   iframe {
     width: 480px;
     height: 360px;
   }
+  .sbs-copyright{
+    text-align: center;
+    font-size: 16px;
+    padding-bottom: 60px;
+  }
+  .how-font{
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 29px;
+}
 }
 .movie-font{
   font-family: "Ubuntu", sans-serif;

@@ -95,12 +95,83 @@ section {
     font-weight: 700;
     margin-bottom: 10px; }
   section p {
-    margin-bottom: 30px; }
+    margin-bottom: 0px; }
     section p:last-child {
       margin-bottom: 0; }
   section.color {
     background-color: #3cb5f9;
     color: white; }
+
+  /* ============================================================
+  COMMONS
+============================================================ */
+section.how {
+  position: relative;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: rgb(40, 170, 220);
+  color:white;
+
+}
+section.how.p {
+  margin-bottom: 0px !important;
+}
+section.how:last-child {
+  margin-bottom: 0;
+}
+section.how:before, section.how:after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  right: 0;
+  content: "";
+}
+section.how:before {
+  border-top: solid 20px #fff;
+  border-right: solid 20px #fff;
+  border-left: solid 20px transparent;
+  border-bottom: solid 20px transparent;
+}
+section.how:after {
+  border-bottom: solid 20px #5b7093;
+  border-left: solid 20px #5b7093;
+  border-right: solid 20px transparent;
+  border-top: solid 20px transparent;
+}
+
+
+/* ============================================================
+  BORDER RADIUS
+============================================================ */
+.border-radius {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+.border-radius:after {
+  -webkit-border-radius: 0 0 0 10px;
+  -moz-border-radius: 0 0 0 10px;
+  -ms-border-radius: 0 0 0 10px;
+  -o-border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 10px;
+}
+
+/* ============================================================
+  SHADOW
+============================================================ */
+.shadow {
+  overflow: hidden;
+}
+.shadow:after {
+  -webkit-box-shadow: -1px 1px 5px #212835;
+  -moz-box-shadow: -1px 1px 5px #212835;
+  box-shadow: -1px 1px 5px #212835;
+}
+
 
 /* =Info Bar
 -------------------------------------------------------------- */
@@ -136,7 +207,8 @@ header {
   top: 0;
   left: 0;
   z-index: 999;
-  background-color: black;
+  background-color: #08578f;
+  box-shadow: 5px 5px 30px #888888;
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   -ms-transition: height 0.3s;
@@ -148,8 +220,10 @@ header {
     line-height: 150px;
     float: left;
     font-family: 'Yanone Kaffeesatz', sans-serif;
+    /*font-family: 'Merriweather Sans', sans-serif;*/
     font-size: 60px;
-    color: #96ff96;
+    color: white;
+    text-shadow: 5px 5px #4D4C4C;
     font-weight: 900;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -162,7 +236,7 @@ header {
     header nav a {
       line-height: 150px;
       margin-left: 20px;
-      color: #96ff96;
+      color: white;
       font-weight: 300;
       font-size: 16px;
       font-family: "Nanum Gothic", sans-serif;
