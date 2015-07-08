@@ -11,7 +11,6 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
         <%= javascript_include_tag 'application'%>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="https://static.tagboard.com/public/js/embedAdvanced.js"></script>
 
   <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
@@ -26,8 +25,30 @@
 
     <link rel="stylesheet" href="/css/elegant-icons.css" />
 
+    <script src="/js/classie.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="/js/animations.js"></script> 
 
- <script src="/js/classie.js"></script>
+    <script src="/js/cooltext.min.js"></script>
+
+    <script>
+    $(document).ready(function(){
+      $("#logo").cooltext({
+         sequence:[
+            {
+               action:"animation",
+               animation:"cool180",
+               elements:"letters",
+               speed:38,
+               stagger:91
+            }
+         ],
+         cycle:true             // cyclic sequence
+      });
+  });
+
+    </script>
+
 <script>
     function init() {
         window.addEventListener('scroll', function(e){
@@ -56,11 +77,13 @@
     <div class="container clearfix">
 
 
-        <h1 id="logo">
-            18seconds
-        </h1>
+        <a href="/">
+          <h1 id="logo">
+              18seconds
+          </h1>
+        </a>
         <nav>
-            <%= link_to "Home", root_path %>
+            <%= link_to "공지사항", root_path %>
             <%= link_to "소개", :controller => :main, :action => :intro %>
             <%= link_to "참여방법", :controller => :main, :action => :how %>
             <%= link_to "영상", :controller => :main, :action => :movies %>
@@ -81,19 +104,19 @@
 
         <div style="display: block;">
                 <span class="icon-align">
-                <a href="https://www.facebook.com/pages/18seconds/413217435530277" class="icon-color">
+                <a href="https://www.facebook.com/pages/18seconds/413217435530277" target='_blank' class="icon-color">
                   <i class="social_facebook_circle"></i>
                 </a>
-                <a href="https://twitter.com/sbs18seconds" class="icon-color">
+                <a href="https://twitter.com/sbs18seconds"  target='_blank' class="icon-color">
                   <i class="social_twitter_circle"></i>
                 </a>
-                <a href="#" class="icon-color">
+                <a href="https://instagram.com/sbs18seconds" target='_blank' class="icon-color">
                   <i class="social_instagram_circle"></i>
                 </a>
-                <a href="https://www.youtube.com/channel/UCVrmxQJjbmcnzu5PydNrruA?view_as=public" class="icon-color">
+                <a target='_blank' href="https://www.youtube.com/channel/UCVrmxQJjbmcnzu5PydNrruA?view_as=public" class="icon-color">
                   <i class="social_youtube_circle"></i>
                 </a>
-                <a href="https://plus.google.com/u/0/109193903849975147888/posts" class="icon-color">
+                <a href="https://plus.google.com/u/0/109193903849975147888/posts" class="icon-color" target='_blank'>
                   <i class="social_googleplus_circle"></i>
                 </a>
                 </span>
@@ -115,7 +138,6 @@
   </footer><!-- /footer -->
 </body>
 </html>
-
 
 <!--<!DOCTYPE html>
 <html lang="ko">
@@ -214,7 +236,6 @@
             </div>
         </div>
     </div>
-
 
 
     <!-- FOOTER 

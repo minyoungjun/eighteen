@@ -219,11 +219,11 @@ header {
     height: 150px;
     line-height: 150px;
     float: left;
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
     /*font-family: 'Merriweather Sans', sans-serif;*/
     font-size: 60px;
     color: white;
-    text-shadow: 5px 5px #4D4C4C;
+    /*text-shadow: 5px 5px #4D4C4C;*/
     font-weight: 900;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
