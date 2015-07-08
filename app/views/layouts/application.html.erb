@@ -1,4 +1,109 @@
 <!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+  <title>18 Seconds</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+         
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        <%= javascript_include_tag 'application'%>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="https://static.tagboard.com/public/js/embedAdvanced.js"></script>
+
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz' rel='stylesheet' type='text/css'>
+  <link href="/style_head.css" rel="stylesheet">
+    <link href="/18s_n.css" rel="stylesheet">
+
+
+
+
+    <link rel="stylesheet" href="/css/elegant-icons.css" />
+
+
+ <script src="/js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 300,
+                header = document.querySelector("header");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"smaller");
+            } else {
+                if (classie.has(header,"smaller")) {
+                    classie.remove(header,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+<header>
+    <div class="container clearfix">
+
+
+        <h1 id="logo" class="cmn-t-pulse">
+            #18s
+        </h1>
+        <nav>
+            <%= link_to "Home", root_path %>
+            <%= link_to "소개", :controller => :main, :action => :intro %>
+            <%= link_to "참여방법", :controller => :main, :action => :how %>
+            <%= link_to "영상", :controller => :main, :action => :movies %>
+        </nav>
+    </div>
+</header><!-- /header -->
+
+<div id="main">
+<%= yield %>
+</div>
+
+
+  
+</div><!-- /#wrapper -->
+
+  <footer>
+   
+
+        <p class="icon-align">
+            
+                <a href="#" class="icon-color">
+                  <i class="social_facebook_circle"></i>
+                </a>
+                <a href="#" class="icon-color">
+                  <i class="social_twitter_circle"></i>
+                </a>
+                <a href="#" class="icon-color">
+                  <i class="social_instagram_circle"></i>
+                </a>
+                <a href="#" class="icon-color">
+                  <i class="social_youtube_circle"></i>
+                </a>
+                <a href="#" class="icon-color">
+                  <i class="social_googleplus_circle"></i>
+                </a>
+                
+        </p>
+
+  </footer><!-- /footer -->
+</body>
+</html>
+
+
+<!--<!DOCTYPE html>
 <html lang="ko">
 <head>
   <title>18 Seconds</title>
@@ -13,12 +118,14 @@
         
 
         <!-- Google Fonts -->
+        <!--
     <link href='http://fonts.googleapis.com/css?family=Lato:300italic,400italic,600italic,700italic,800italic,400,800,700,600,300' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Roboto:300,700,400' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/earlyaccess/nanumgothic.css' type='text/css'>
 
 
     <!-- Css -->
+    <!--
     <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/css/lightbox.min.css" />
     <link rel="stylesheet" href="/css/elegant-icons.css" />
@@ -35,7 +142,7 @@
     <link rel="shortcut icon" href="upload/favicon.ico">
     <link rel="apple-touch-icon" href="upload/apple-touch-icon.png">
       <link rel="apple-touch-icon" sizes="72x72" href="upload/apple-touch-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="upload/apple-touch-icon-114x114.png">-->
+      <link rel="apple-touch-icon" sizes="114x114" href="upload/apple-touch-icon-114x114.png">
   <%= stylesheet_link_tag    'application', media: 'all'%>
   <%= csrf_meta_tags %>
 
@@ -94,9 +201,9 @@
         </div>
     </div>
 
-<%= yield %>
 
-    <!-- FOOTER -->
+
+    <!-- FOOTER 
     <footer>
 
         <p class="text-center">
